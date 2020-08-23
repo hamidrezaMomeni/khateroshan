@@ -26,4 +26,5 @@ $DbObj = new DB();
 $DbObj->getConnection();
 $result = $DbObj->getCountTopicNumber($_POST['topicNumber']);
 $result = $result->fetchAll();
+
 include "../Views/DB.php";

@@ -32,7 +32,12 @@
                     </small>
                   </div>
                   <button type="submit" class="btn btn-primary">دریافت اطلاعات</button>
-                  <a href="Data/ConfigDB.php" class="btn btn-info">مقدار دهی اولیه</a>
+                  <a href="Data/ConfigDB.php" class="btn btn-info">initialization</a>
+                  <small class="form-text text-muted">
+                      The first time you run this project, just click the initialization
+                       button once and never click on it again
+                       as you may create duplicate data in the database.
+                  </small>
                 </form>
             </div>
         </div>

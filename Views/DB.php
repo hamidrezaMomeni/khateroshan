@@ -21,7 +21,7 @@
                     <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
                       <div class="card-header">Topic Number</div>
                       <div class="card-body">
-                        <h5 class="card-title">Primary card title</h5>
+                        <h6 class="card-title">Number of tickets registered for each topic</h6>
                         <p class="card-text">
                             <?php echo $result[0][0]; ?>
                         </p>

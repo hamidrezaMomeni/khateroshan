@@ -1,4 +1,4 @@
-<?php include "../Controllers/scrapController.php";?>
+<?php //include "../Controllers/scrapController.php";?>
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
     <head>
@@ -17,17 +17,15 @@
                     <?php echo $scrapObj->getElementValue("//*[@class='c-product__title']"); ?>
                 </h4>
             </div>
-            <div class="">
-                <div class="row">
-                    <div class="col-md-6 col-xs-4 col-one">
-                        <img src="<?php echo $scrapObj->getElementImg("//*[@class='js-gallery-img']"); ?>" alt="Product image" class="product-img">
+            <div class="row">
+                <div class="col-md-6 col-xs-4 col-one">
+                    <img src="<?php echo $scrapObj->getElementImg("//*[@class='js-gallery-img']"); ?>" alt="Product image" class="product-img">
+                </div>
+                <div class="col-md-6 col-xs-3 col-two">
+                    <div class="product-price">
+                        <?php echo $scrapObj->getElementValue("//*[@class='c-product__seller-price-real']");?>
                     </div>
-                    <div class="col-md-6 col-xs-3 col-two">
-                        <div class="product-price">
-                            <?php echo $scrapObj->getElementValue("//*[@class='c-product__seller-price-real']");?>
-                        </div>
-                        <button type="button" class="btn btn-primary btn-buy">اضافه به سبد خرید</button>
-                    </div>
+                        <a class="btn btn-primary btn-buy" href="../index.php">برو به صفحه اصلی</a>
                 </div>
             </div>
         </div>

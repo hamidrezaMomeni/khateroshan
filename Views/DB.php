@@ -1,4 +1,3 @@
-<?php //include "../Controllers/scrapController.php";?>
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
     <head>
@@ -24,7 +23,7 @@
                       <div class="card-body">
                         <h5 class="card-title">Primary card title</h5>
                         <p class="card-text">
-                            <?php echo $result; ?>
+                            <?php echo $result[0][0]; ?>
                         </p>
                       </div>
                     </div>

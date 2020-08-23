@@ -32,6 +32,7 @@
                     </small>
                   </div>
                   <button type="submit" class="btn btn-primary">دریافت اطلاعات</button>
+                  <a href="Data/ConfigDB.php" class="btn btn-info">مقدار دهی اولیه</a>
                 </form>
             </div>
         </div>

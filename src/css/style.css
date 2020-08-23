@@ -1,0 +1,35 @@
+body {
+    direction: rtl;
+}
+
+h4.title-page {
+    text-align: right;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+div.col-one {
+    text-align: right;
+    border-left: 3px solid #333;
+}
+
+div.col-two {
+    text-align: center;
+    padding-top: 100px;
+}
+
+img.product-img {
+    width: 300px;
+    height: 300px;
+}
+
+div.product-price {
+    color: #333;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+button.btn-buy {
+    font: 16px monospace;
+    margin-top: 30px;
+}

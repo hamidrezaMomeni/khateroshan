@@ -21,6 +21,19 @@
               </div>
               <button type="submit" class="btn btn-primary">دریافت اطلاعات</button>
             </form>
+            <hr>
+            <div class="DbInfo">
+                <form method="post" action="Data/DB.php">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Topic Number</label>
+                    <input type="text" name="topicNumber" class="form-control" id="topicNumber" aria-describedby="topicNumber" placeholder="Enter Topic Number">
+                    <small id="topicNumber" class="form-text text-muted">
+                        here you must enter a topic number you want
+                    </small>
+                  </div>
+                  <button type="submit" class="btn btn-primary">دریافت اطلاعات</button>
+                </form>
+            </div>
         </div>
     </body>
 </html>

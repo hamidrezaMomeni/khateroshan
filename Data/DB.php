@@ -6,12 +6,14 @@ class DB
     const USERNAME = "root";
     const PASSWORD = "hamidreza";
     private $pdo = NULL;
+    public $initialize = FALSE;
 
-    public function __construct() {
+    public function initialize() {
         //get connection to the database
         $this->pdo = $this->getConnection();
         $this->createTables();
         $this->setTheValues();
+        $this->initialize = TRUE;
     }
 
     private function getConnection() {
@@ -46,6 +48,17 @@ class DB
         $handler = $this->pdo->prepare($query);
         $handler->execute();
     }
+
+    public function getCountTopicNumber($topicNumber) {
+        $query = "SELECT count(*) FROM Tickets WHERE `Topic_id` = {$topicNumber}";
+        $handler = $this->pdo->prepare($query);
+        var_dump($handler->execute());
+    }
 }
 
 $DbObj = new DB();
+if ($DbObj->initialize == FALSE) {
+    $DbObj->initialize();
+}
+$result = $DbObj->getCountTopicNumber($_POST['topicNumber']);
+include "../Views/DB.php";
